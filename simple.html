@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Simple Cors</title>
+	<script type="text/javascript" src="http.js"></script>
+</head>
+
+<h2>Simple Cors</h2>
+
+<button type="button" onclick="sendSimpleCors();">Send</button>
+
+<script type="text/javascript">
+
+	var url = 'http://laravel.dev/api/cors/simple';
+
+	function sendSimpleCors() {
+		get({
+			url: url,
+			success: function (data) {
+				console.log(data);
+			}
+		});
+	}
+
+</script>
+
+</html>
